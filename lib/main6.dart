@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import './hai_headset.dart' as headset;
+import './hai_komputer.dart' as komputer;
+import './hai_radio.dart' as radio;
+import './hai_smartphone.dart' as semartphone;
+
 
 
 void main()
@@ -40,9 +45,10 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
         bottom: new TabBar(
           controller: controller,
           tabs: <Widget>[
-new Tab()
-
-
+new Tab(icon: new Icon(Icons.computer),),
+new Tab(icon: new Icon(Icons.headset),),
+new Tab(icon: new Icon(Icons.radio),),
+new Tab(icon: new Icon(Icons.smartphone),),
 
 
           ],
@@ -51,6 +57,16 @@ new Tab()
 
         ),
 
+
+      ),
+
+      body: new TabBarView(
+        controller: controller,
+        children: <Widget>[
+
+
+
+        ],
 
       ),
       
