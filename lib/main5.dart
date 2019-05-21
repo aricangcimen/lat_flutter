@@ -21,7 +21,7 @@ class Haldua extends StatelessWidget {
       body: new Center(
 child: new IconButton(
 icon:  new Icon(Icons.change_history, size : 50.0 , ),
-onPressed: null ,
+onPressed: (){Navigator.pushNamed(context, '/Halsatu'); },
 ),
       ),
       
@@ -36,7 +36,8 @@ class Halsatu extends StatelessWidget {
       appBar: new AppBar(title:  new Text("Speaker"),),
       body: new Center(
 child: new IconButton(
-  icon: new Icon(Icons.chat, size: 50.0 , color : Colors.blueGrey,)
+  icon: new Icon(Icons.chat, size: 50.0 , color : Colors.blueGrey,),
+  onPressed: (){Navigator.pushNamed(context, '/Haldua');},
 
 
 ),
