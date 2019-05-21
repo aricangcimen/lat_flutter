@@ -16,6 +16,19 @@ class _HomeState extends State<Home> {
 if(str.isEmpty)return;
 AlertDialog alertDialog = new AlertDialog(
 content: new Text(str , style : new TextStyle(fontSize : 20.0),),
+actions: <Widget>[
+new RaisedButton(
+color: Colors.purple,
+child: new Text("OK"),
+onPressed: (){
+Navigator.pop(context);
+
+
+},
+
+),
+
+],
 
 );
 showDialog(context: context , child: alertDialog );
