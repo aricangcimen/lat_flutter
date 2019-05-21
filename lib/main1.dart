@@ -22,7 +22,7 @@ class Halamansatu extends StatelessWidget {
           child: new Icon(Icons.favorite)
           //child: new Text("Idcorner Tutorial",style: new TextStyle(color: Colors.white,fontFamily: "Serif",fontSize: 20.0),),
         ),
-      ), ,
+      ), 
       )
       
       
