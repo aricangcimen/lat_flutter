@@ -13,6 +13,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
  String teks = "";
+ TextEditingController controller = new TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -24,12 +26,14 @@ class _HomeState extends State<Home> {
           children: <Widget>[
 
             new TextField(
+              controller: controller,
 decoration: new InputDecoration(
   hintText: "tulislah disini",
 ),
 onChanged: (String str){
   setState(() {
-    teks = str;
+    teks = str +  '/n' +teks ;
+    controller.text = "";
   });
 },
             ),
