@@ -63,6 +63,10 @@ new Tab(icon: new Icon(Icons.smartphone),),
       body: new TabBarView(
         controller: controller,
         children: <Widget>[
+          new komputer.komputer(),
+          new headset.headset(),
+          new radio.radio(),
+          new semartphone.smartphone(),
 
 
 
