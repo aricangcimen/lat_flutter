@@ -12,6 +12,17 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  void _alretdialog(String str){
+if(str.isEmpty)return;
+AlertDialog alertDialog = new AlertDialog(
+content: new Text(str , style : new TextStyle(fontSize : 20.0),),
+
+);
+showDialog(context: context , child: alertDialog );
+
+
+
+  }
  String teks = "";
  TextEditingController controller = new TextEditingController();
 
@@ -37,7 +48,20 @@ onChanged: (String str){
   });
 },
             ),
-          new Text(teks , style : new TextStyle (fontSize : 20.0),)
+             new Text(teks , style : new TextStyle (fontSize : 20.0),),
+            new TextField(
+              controller: controller,
+decoration: new InputDecoration(
+  hintText: "tulislah untuk alret",
+),
+onSubmitted: (String str){
+_alretdialog(str);
+
+
+},
+            ),
+
+         
 
 
           ],
