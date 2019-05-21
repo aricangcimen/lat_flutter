@@ -23,7 +23,10 @@ class Halamansatu extends StatelessWidget {
     body: new Container(
       child: new Row(
       children : <Widget>[
-
+      new Icon(Icons.feedback , size : 70.0 , color : Colors.red ,),
+      new Icon(Icons.fiber_dvr , size : 60.0 , color : Colors.yellow),
+      new Icon(Icons.cake, size : 60.0 , color : Colors.yellow),
+      new Icon(Icons.call_made , size : 60.0 , color : Colors.yellow),
 
 
       ],
