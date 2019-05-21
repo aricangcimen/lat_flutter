@@ -12,7 +12,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  void _alretdialog(String str){
+  
+  
+  
+void _alretdialog(String str){
 if(str.isEmpty)return;
 AlertDialog alertDialog = new AlertDialog(
 content: new Text(str , style : new TextStyle(fontSize : 20.0),),
@@ -37,8 +40,8 @@ showDialog(context: context , child: alertDialog );
 
   }
  String teks = "";
- TextEditingController controller = new TextEditingController();
-
+ TextEditingController controllerInput = new TextEditingController();
+  TextEditingController controllerAllert = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -50,20 +53,20 @@ showDialog(context: context , child: alertDialog );
           children: <Widget>[
 
             new TextField(
-              controller: controller,
+              controller: controllerInput,
 decoration: new InputDecoration(
   hintText: "tulislah disini",
 ),
 onChanged: (String str){
   setState(() {
     teks = str +  '/n' +teks ;
-    controller.text = "";
+    controllerInput.text = "";
   });
 },
             ),
              new Text(teks , style : new TextStyle (fontSize : 20.0),),
             new TextField(
-              controller: controller,
+              controller: controllerAllert,
 decoration: new InputDecoration(
   hintText: "tulislah untuk alret",
 ),
