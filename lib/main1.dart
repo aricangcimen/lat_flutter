@@ -19,7 +19,8 @@ class Halamansatu extends StatelessWidget {
         width: 200.0,
         height: 100.0,
         child: new Center(
-          child: new Text("Idcorner Tutorial",style: new TextStyle(color: Colors.white,fontFamily: "Serif",fontSize: 20.0),),
+          child: new Icon(Icons.favorite)
+          //child: new Text("Idcorner Tutorial",style: new TextStyle(color: Colors.white,fontFamily: "Serif",fontSize: 20.0),),
         ),
       ), ,
       )
