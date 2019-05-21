@@ -15,22 +15,28 @@ class Halsatu extends StatelessWidget {
       appBar: new AppBar(title: new Text("Card dan Parsing"),),      
       body: new Container(
           child: new Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+
             children: <Widget>[
                 new Card(
         child:new Column(
           children: <Widget>[
         new Icon(Icons.call_missed , size : 50.0 ,  color : Colors.white , ),
         new Text("Home",style: new TextStyle(fontSize: 20.0),)
+          ],
+        )
+        
+                ),
 
-
-
-
+        new Card(
+        child:new Column(
+          children: <Widget>[
+        new Icon(Icons.call_missed , size : 50.0 ,  color : Colors.white , ),
+        new Text("Home",style: new TextStyle(fontSize: 20.0),)
           ],
         )
         
                 )
-
-
             ],
 
 
